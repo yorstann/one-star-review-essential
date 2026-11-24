@@ -4,14 +4,18 @@ import { join } from "node:path";
 // One-line entry for make.fun's "One-Star Review of Something
 // Essential" bounty. The program writes exactly one line to
 // /output/entry.txt (or $OUTPUT_DIR/entry.txt).
-// Pass 1 draft: a one-star review of sleep — it takes a third of
-// every day, charges full price, and advertises itself as
-// restful; cancel anytime, they said, nobody said how. Fully
-// deadpan, but a second pass follows with a sharper grievance.
+// Pass 2 (final): a one-star review of oxygen. The grievance is
+// total dependence — the sharpest true complaint there is
+// against oxygen, recognised instantly by everyone. The review
+// stays fully deadpan ("One star." opener, no exclamation, no
+// wink) and saves the sting for the final three words: the
+// reviewer has tried to quit many times, and the longest he
+// lasted was about a minute. One joke, zero filler. It replaces
+// the pass-1 sleep review, whose grievance was softer.
 // buildEntryLine() is the single source of truth for the exact
 // text; nothing below duplicates it.
 export function buildEntryLine(): string {
-  return "One star. Sleep takes a third of every day, charges full price, and advertises itself as restful. Cancel anytime, they said. Nobody said how.";
+  return "One star. Oxygen is free, unlimited, and hopelessly addictive. I have tried to quit many times. The longest I lasted was about a minute.";
 }
 
 export const ENTRY_LINE = buildEntryLine();
